@@ -30,3 +30,16 @@ function showQuestion() {
     
     document.getElementById("next-btn").disabled = true;
 }
+
+// Sélection de la réponse
+function selectAnswer(i, btn) {
+    // Mettre en surbrillance la réponse sélectionnée
+    btn.classList.add('selected');
+   
+    // Vérifier si la réponse est correcte
+    if (i === questions[index].correct) {
+        score++;
+    }
+    
+    document.getElementById("next-btn").disabled = false;
+}
