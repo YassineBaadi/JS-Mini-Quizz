@@ -1,0 +1,15 @@
+const questions = [
+    { question: "Quel est le père de Naruto ?", answers: ["Minato", "Jiraiya", "Kakashi"], correct: 0 },
+    { question: "Quel est le démon en Naruto ?", answers: ["Ichibi", "Kyûbi", "Hachibi"], correct: 1 },
+    { question: "Quel est le sensei de l'équipe 7 ?", answers: ["Asuma", "Kakashi", "Gai"], correct: 1 },
+    { question: "Quel est le rêve de Naruto ?", answers: ["Devenir Hokage", "Retrouver Sasuke", "Être le plus fort"], correct: 0 },
+    { question: "Qui est le frère de Sasuke ?", answers: ["Madara", "Obito", "Itachi"], correct: 2 },
+    { question: "Quelle est la technique signature de Naruto ?", answers: ["Chidori", "Rasengan", "Amaterasu"], correct: 1 },
+    { question: "Quel bijû possède Gaara ?", answers: ["Ichibi", "Kyûbi", "Sanbi"], correct: 0 },
+    { question: "Quel est le village de Naruto ?", answers: ["Suna", "Konoha", "Kiri"], correct: 1 },
+    { question: "Quel est le nom du clan de Neji ?", answers: ["Uchiha", "Hyuga", "Nara"], correct: 1 },
+    { question: "Quel personnage porte un masque orange ?", answers: ["Kakashi", "Obito", "Zabuza"], correct: 1 }
+];
+
+let index = 0;
+let score = 0;
