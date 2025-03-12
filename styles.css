@@ -1,0 +1,9 @@
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
