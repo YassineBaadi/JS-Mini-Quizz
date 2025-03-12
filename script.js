@@ -32,9 +32,11 @@ function showQuestion() {
 }
 
 // Sélection de la réponse
-function selectAnswer(i) {
+function selectAnswer(i, btn) {
 
-   
+    // Mettre en surbrillance la réponse sélectionnée
+    btn.classList.add('selected');
+    
     // Vérifier si la réponse est correcte
     if (i === questions[index].correct) {
         score++;
