@@ -43,3 +43,15 @@ function selectAnswer(i, btn) {
     
     document.getElementById("next-btn").disabled = false;
 }
+
+document.getElementById("next-btn").onclick = function() {
+    index++;
+    if (index < questions.length) {
+        showQuestion();
+    } else {
+        alert("Quiz terminé ! Score : " + score + " / " + questions.length);
+        location.reload();
+    }
+};
+
+showQuestion();
