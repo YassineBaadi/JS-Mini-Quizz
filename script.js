@@ -13,3 +13,20 @@ const questions = [
 
 let index = 0;
 let score = 0;
+
+// Afficher la question
+function showQuestion() {
+    let q = questions[index];
+    document.getElementById("question").textContent = q.question;
+    let answersEl = document.getElementById("answers");
+    answersEl.innerHTML = "";
+    
+    for (let i = 0; i < q.answers.length; i++) {
+        let btn = document.createElement("button");
+        btn.textContent = q.answers[i];
+        btn.onclick = function() { selectAnswer(i, btn); };
+        answersEl.appendChild(btn);
+    }
+    
+    document.getElementById("next-btn").disabled = true;
+}
